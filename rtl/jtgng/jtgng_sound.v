@@ -147,12 +147,12 @@ T80pa u_cpu(
     .DIR        ( 212'b0  ),
     .OUT0       ( 1'b0    ),
     .RFSH_n     (),
-    .IORQ       (),
+    //.IORQ       (),
     .M1_n       (),
     .BUSAK_n    (),
     .HALT_n     (),
     .MREQ_n     (),
-    .Stop       (),
+    //.Stop       (),
     .REG        ()
 );
 `endif
