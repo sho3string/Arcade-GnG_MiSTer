@@ -270,7 +270,7 @@ jtgng_rom u_rom (
     .scr_dout   ( scr_dout      ),
 
     // ROM load
-     .romload_clk ( romload_clk  ),
+    .romload_clk ( romload_clk  ),
     .romload_wr  ( romload_wr   ),
     .romload_addr( romload_addr ),
     .romload_data( romload_data )

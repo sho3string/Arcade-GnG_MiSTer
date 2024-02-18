@@ -33,7 +33,7 @@ module jtgng_dual_clk_ram #(parameter dw=8, aw=10, wn=(2**aw))(
 
 reg [dw-1:0] mem[0:wn-1];
 
-always @(posedge clka) if(clka_en) begin
+always @(negedge clka) if(clka_en) begin
     q_a <= mem[addr_a];
     if(we_a) mem[addr_a] <= data_a;
 end
